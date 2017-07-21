@@ -24,6 +24,9 @@ describe('tests', function() {
           "category": "food",
           "price": 2.0
         }
+      var test2 = test
+      var test3 = test
+
       var solution1 = {
           "name": "Biscuits",
           "type": "regular",
@@ -38,7 +41,7 @@ describe('tests', function() {
           "category": "food",
           "price": 1.0
         }
-      assert(Math.abs(applyCoupon2.applyCoupon("food")(0.5)(test).price - solution2.price)<0.01)
+      assert(Math.abs(applyCoupon2.applyCoupon("food")(0.5)(test2).price - solution2.price)<0.01)
 
       var solution3 = {
           "name": "Biscuits",
@@ -46,7 +49,7 @@ describe('tests', function() {
           "category": "food",
           "price": 1.8
         }
-      assert(Math.abs(applyCoupon2.applyCoupon("food")(0.5)(test).price - solution3.price)<0.01)
+      assert(Math.abs(applyCoupon2.applyCoupon("food")(0.5)(test3).price - solution3.price)<0.01)
 
     } catch (error) {
       printMessage('Hint 💡', 'You can check the property `price` to find out its price');
