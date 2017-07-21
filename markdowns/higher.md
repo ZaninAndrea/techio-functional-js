@@ -19,4 +19,4 @@ We can now reuse the `isPrime` function in conjunction with `reject` to get all 
 
 Reject is not a built-in function in js, we are going to use the library `underscore.js` to have it. The syntax is slightly different: `_.reject(list, predicate)` where `_` is the underscore library
 
-@[Implement the `notPrimeItems` function using `reject` (you can use functions defined in the previous snippets)]({ "stubs": ["isNotPrime.js"], "command": "node_modules/mocha/bin/mocha isNotPrime.spec.js --reporter list" })
+@[Implement the `notPrimeItems` function using `reject` (you can use functions defined in the previous snippets)]({ "stubs": ["isNotPrime.js, isPrime.js"], "command": "node_modules/mocha/bin/mocha isNotPrime.spec.js --reporter list" })
