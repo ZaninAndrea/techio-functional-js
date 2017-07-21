@@ -1,5 +1,5 @@
 var assert = require('assert');
-var applyCoupon = require('./applyCoupon.js');
+var coupon = require('./coupon.js');
 
 var mapUsed = false;
 var superMap = Array.prototype.map;
@@ -60,7 +60,7 @@ describe('tests', function() {
           price: 49.9
         }
       ]
-      var guess = applyCoupon.applyCoupon(cart)
+      var guess = coupon.applyCoupon(cart)
       var error = 0
       guess.forEach(function(element,idx){
         error+=Math.abs(element.price - solution[idx].price)
