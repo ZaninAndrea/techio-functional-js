@@ -30,4 +30,4 @@ E.g.
 
 Now back to our amazon example: we can use `map` to apply a coupon. The `applyCoupon` function should apply a 20% discount on all the tech items.
 
-@[Implement the `applyCoupon` function]({ "stubs": ["coupon.js"], "command": "node_modules/mocha/bin/mocha coupon.spec.js --reporter list",  "layout": "aside" })  
+@[Implement the applyCoupon function]({ "stubs": ["coupon.js"], "command": "node_modules/mocha/bin/mocha coupon.spec.js --reporter list",  "layout": "aside" })
