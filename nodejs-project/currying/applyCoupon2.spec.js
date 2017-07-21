@@ -24,8 +24,18 @@ describe('tests', function() {
           "category": "food",
           "price": 2.0
         }
-      var test2 = test
-      var test3 = test
+      var test2 = {
+          "name": "Biscuits",
+          "type": "regular",
+          "category": "food",
+          "price": 2.0
+        }
+      var test3 = {
+          "name": "Biscuits",
+          "type": "regular",
+          "category": "food",
+          "price": 2.0
+        }
 
       var solution1 = {
           "name": "Biscuits",
