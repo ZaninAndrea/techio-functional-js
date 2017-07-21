@@ -47,4 +47,4 @@ Reduce takes in a callback function and a starting value, the function takes as 
 Some examples:
 
 @[Multiplying all the elements of an array]({ "stubs": ["multiply.js"], "command": "node multiply.js"})
-@[Multiplying all the elements of an array]({ "stubs": ["implementMap.js"], "command": "node implementMap.js"})
+@[Implementing map with reduce]({ "stubs": ["implementMap.js"], "command": "node implementMap.js"})
