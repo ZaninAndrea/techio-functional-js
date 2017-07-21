@@ -5,7 +5,7 @@ var rejectUsed = false;
 var failed = false;
 var superReject = _.reject;
 _.reject = function() {
-  superReject = true;
+  rejectUsed = true;
   return superReject.apply(this, arguments);
 };
 describe('tests', function() {
