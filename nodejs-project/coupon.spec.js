@@ -1,71 +1,103 @@
 var assert = require('assert');
-var coupon = require('./coupon.js');
+var isPrime = require('./isPrime.js'); // to allow reference to previously defined functions
+var isNotPrime = require('./isNotPrime.js');
+var _ = require('underscore') // needed to have support for the reject function
 
-var mapUsed = false;
-var superMap = Array.prototype.map;
-Array.prototype.map = function() {
-  mapUsed = true;
-  return superMap.apply(this, arguments);
+var rejectUsed = false;
+var failed = false;
+var superReject = _.reject;
+_.reject = function() {
+  rejectUsed = true;
+  return superReject.apply(this, arguments);
 };
 describe('tests', function() {
-  it('should return the discounted items', function() {
+  it('should return the regular items', function() {
     try {
       var cart = [{
           "name": "Biscuits",
-          "type": "regular",
-          "category": "food",
-          "price": 2.0
+          "type": "regular"
         },
         {
           "name": "Monitor",
-          "type": "prime",
-          "category": "tech",
-          "price": 119.99
+          "type": "prime"
         },
         {
           "name": "Mouse",
-          "type": "prime",
-          "category": "tech",
-          "price": 25.50
+          "type": "prime"
         },
         {
           "name": "dress",
-          "type": "regular",
-          "category": "clothes",
-          "price": 49.90
-        },
-      ]
-      var solution = [{
-          name: 'Biscuits',
-          type: 'regular',
-          category: 'food',
-          price: 2
-        },
-        {
-          name: 'Monitor',
-          type: 'prime',
-          category: 'tech',
-          price: 95.992
-        },
-        {
-          name: 'Mouse',
-          type: 'prime',
-          category: 'tech',
-          price: 20.400000000000002
-        },
-        {
-          name: 'dress',
-          type: 'regular',
-          category: 'clothes',
-          price: 49.9
+          "type": "regular"
         }
       ]
-      var guess = coupon.applyCoupon(cart)
-      var error = 0
-      guess.forEach(function(element,idx){
-        error+=Math.abs(element.price - solution[idx].price)
-      })
-      assert.isBelow(error, 0.01);
+      var solution = [{
+          "name": "Biscuits",
+          "type": "regular"
+        },
+        {
+          "name": "dress",
+          "type": "regular"
+        }
+      ]
+      var cart2 = [{
+          "name": "E-Book",
+          "type": "prime"
+        },
+        {
+          "name": "pen",
+          "type": "regular"
+        },
+        {
+          "name": "Cheese",
+          "type": "regular"
+        },
+        {
+          "name": "Bike",
+          "type": "prime"
+        },
+        {
+          "name": "Biscuits",
+          "type": "regular"
+        },
+        {
+          "name": "Monitor",
+          "type": "prime"
+        }
+      ]
+      var solution2 = [{
+          "name": "pen",
+          "type": "regular"
+        },
+        {
+          "name": "Cheese",
+          "type": "regular"
+        },
+        {
+          "name": "Biscuits",
+          "type": "regular"
+        }
+      ]
+      var cart3 = [{
+          "name": "Biscuits",
+          "type": "regular"
+        },
+        {
+          "name": "dress",
+          "type": "regular"
+        }
+      ]
+      var solution3 = [{
+          "name": "Biscuits",
+          "type": "regular"
+        },
+        {
+          "name": "dress",
+          "type": "regular"
+        }
+      ]
+      assert.deepEqual(solution, isNotPrime.notPrimeItems(cart));
+      assert.deepEqual(solution2, isNotPrime.notPrimeItems(cart2));
+      assert.deepEqual(solution3, isNotPrime.notPrimeItems(cart3));
 
     } catch (error) {
       failed = true;
@@ -74,12 +106,12 @@ describe('tests', function() {
     }
   });
 
-  it('should use map', function() {
+  it('should use reject', function() {
     try {
-      assert.equal(true, mapUsed);
+      assert.equal(true, rejectUsed);
     } catch (error) {
       failed = true;
-      printMessage('Hint 💡', 'You should use the `map` function!');
+      printMessage('Hint 💡', 'You should use the `reject` function!');
       throw error;
     }
   })
