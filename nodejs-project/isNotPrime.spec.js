@@ -65,4 +65,4 @@ printMessage('Good Job', 'Great another challenge completed! ');
 
 function printMessage(channel, message) {
   console.log('\nTECHIO> message --channel "' + channel + '" "' + message + '"');
-})
+}
