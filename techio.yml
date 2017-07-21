@@ -6,6 +6,8 @@ plan:
     statement: markdowns/pure.md # Set the file path to the page content
   - title: Higher Order Functions
     statement: markdowns/higher.md
+  - title: Currying
+    statement: markdowns/currying.md
 
 # Settings for your programming projects and the associated Docker images
 projects:
