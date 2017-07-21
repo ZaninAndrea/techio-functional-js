@@ -17,6 +17,6 @@ Let's try to implement our first piece of logic for the amazon cart:
 # Reject
 We can now reuse the `isPrime` function in conjunction with `reject` to get all the non-prime items in the cart. The reject function is the opposite of the filter: it creates an array with all the elements but those that satisfy the condition.  
 
-Reject is not a built-in function in js, we are going to use the library `underscore.js` to have it. The syntax is slightly different: `_.reject(list, predicate)` where `_` is the undescore library
+Reject is not a built-in function in js, we are going to use the library `underscore.js` to have it. The syntax is slightly different: `_.reject(list, predicate)` where `_` is the underscore library
 
-@[Knowing this implement the `notPrimeItems` function using `reject`]({ "stubs": ["isNotPrime.js"], "command": "node_modules/mocha/bin/mocha isNotPrime.spec.js --reporter list" })
+@[Implement the `notPrimeItems` function using `reject` (we already required the underscore library for you)]({ "stubs": ["isNotPrime.js"], "command": "node_modules/mocha/bin/mocha isNotPrime.spec.js --reporter list" })

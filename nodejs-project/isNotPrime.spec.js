@@ -1,10 +1,11 @@
 var assert = require('assert');
+var _ = require( 'underscore' ) // needed to have support for the reject function
 var isNotPrime = require('./isNotPrime.js');
 
 var rejectUsed = false;
 var failed = false;
-var superReject = Array.prototype.reject;
-Array.prototype.reject = function () {
+var superReject = _.reject;
+_.reject = function () {
   superReject = true;
   return superReject.apply(this, arguments);
 };
