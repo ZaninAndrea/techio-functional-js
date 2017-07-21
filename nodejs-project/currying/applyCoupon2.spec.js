@@ -43,7 +43,7 @@ describe('tests', function() {
           "category": "food",
           "price": 2.0
         }
-      assert(applyCoupon2.applyCoupon("tech")(0.8)(test) === solution1)
+      assert.deepEqual(applyCoupon2.applyCoupon("tech")(0.8)(test), solution1)
 
       var solution2 = {
           "name": "Biscuits",
