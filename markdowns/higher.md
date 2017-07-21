@@ -17,4 +17,4 @@ Let's try to implement our first piece of logic for the amazon cart:
 # Reject
 We can now reuse the `isPrime` function in conjunction with `reject` to get all the non-prime items in the cart. The reject function is the opposite of the filter: it creates an array with all the elements but those that satisfy the condition.  
 
-@[Knowing this implement the `notPrimeItems` function using `reject`]()
+@[Knowing this implement the `notPrimeItems` function using `reject`]({ "stubs": ["isNotPrime.js"], "command": "node_modules/mocha/bin/mocha isNotPrime.spec.js --reporter list" })
