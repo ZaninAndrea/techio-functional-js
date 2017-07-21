@@ -1,5 +1,5 @@
 # Higher Order Functions
-Higher Order Functions are functions that consume other functions as parameters, **Mind Blown 💥**  
+Higher Order Functions are functions that consume other functions as parameters, **Mind Blown 💥**.  
 We are going to discover how this functions are useful through some examples, in particular we are going to recreate the logic of the amazon checkout.  
 
 # Filter
@@ -20,6 +20,14 @@ We can now reuse the `isPrime` function in conjunction with `reject` to get all 
 Reject is not a built-in function in js, we are going to use the library `underscore.js` to have it. The syntax is slightly different: `_.reject(list, predicate)` where `_` is the underscore library
 
 @[Implement the `notPrimeItems` function using `reject` (you can use functions defined in the other snippets)]({ "stubs": ["isNotPrime.js", "isPrime.js"], "command": "node_modules/mocha/bin/mocha isNotPrime.spec.js --reporter list" , "layout": "aside" })
+
+# Lambda functions
+When defining short functions it's often convenient to use an alternative syntax called lambda function, that allows us to define anonymous functions in a more compact way: `( /*arguments*/ ) => { /*code*/ }` and if our function is only a return statement we can strip the curly brackets and avoid writing `return`: `( /*arguments*/ ) => /*value to return*/`.
+
+We can rewrite the `isEven` snippet from before with a lambda function:
+
+@[Get the even numbers in an array]({ "stubs": ["isEvenLambda.js"], "command": "node isEvenLambda.js" })
+
 
 # Map
 Another very useful higher order function is `map`: it takes a function and applies it to all the elements of an array.  
