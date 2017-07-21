@@ -76,7 +76,7 @@ describe('tests', function() {
 
   it('should use map', function() {
     try {
-      assert.equal(true, mapUsed);
+      assert(mapUsed);
     } catch (error) {
       failed = true;
       printMessage('Hint 💡', 'You should use the `map` function!');
