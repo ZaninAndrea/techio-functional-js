@@ -31,7 +31,7 @@ We can rewrite the `isEven` snippet from before with a lambda function:
 
 # Map
 Another very useful higher order function is `map`: it takes a function and applies it to all the elements of an array.  
-The syntax is identical to `filter`
+The syntax is identical to `filter`  
 E.g.
 
 @[Squaring all the elements of an array]({ "stubs": ["square.js"], "command": "node square.js"})
@@ -39,3 +39,12 @@ E.g.
 Now back to our amazon example: we can use `map` to apply a coupon. The `applyCoupon` function should apply a 20% discount on all the tech items.
 
 @[Implement the applyCoupon function]({ "stubs": ["coupon.js"], "command": "node_modules/mocha/bin/mocha coupon.spec.js --reporter list",  "layout": "aside" })
+
+# Reduce: One Function to rule them all
+Reduce is the last higher order function we are going to discuss and it's also the most powerful: in fact you can implement any list transformation with reduce.  
+Reduce takes in a callback function and a starting value, the function takes as arguments an accumulator and the value of the current element of the array and returns the accumulator to be used in the next cycle. The value returned from the last call of the callback function is the value returned by `reduce`.
+
+Some examples:
+
+@[Multiplying all the elements of an array]({ "stubs": ["multiply.js"], "command": "node multiply.js"})
+@[Multiplying all the elements of an array]({ "stubs": ["implementMap.js"], "command": "node implementMap.js"})
