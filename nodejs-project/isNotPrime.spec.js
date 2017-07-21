@@ -1,5 +1,5 @@
 var assert = require('assert');
-var isPrime = require('./isPrime.js');
+var isNotPrime = require('./isNotPrime.js');
 
 var rejectUsed = false;
 var failed = false;
@@ -42,9 +42,9 @@ it('should return the regular items', function () {
       {"name":"Biscuits", "category":"regular"},
       {"name":"dress", "category":"regular"}
     ]
-    assert.deepEqual(solution, isPrime.notPrimeItems(cart));
-    assert.deepEqual(solution2, isPrime.notPrimeItems(cart2));
-    assert.deepEqual(solution3, isPrime.notPrimeItems(cart3));
+    assert.deepEqual(solution, isNotPrime.notPrimeItems(cart));
+    assert.deepEqual(solution2, isNotPrime.notPrimeItems(cart2));
+    assert.deepEqual(solution3, isNotPrime.notPrimeItems(cart3));
 
   } catch (error) {
     failed = true;
