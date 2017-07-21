@@ -65,11 +65,11 @@ describe('tests', function() {
       guess.forEach(function(element,idx){
         error+=Math.abs(element.price - solution[idx].price)
       })
-      assert.isBelow(error, 0.01);
+      assert.equal(true, error < 0.01);
 
     } catch (error) {
       failed = true;
-      printMessage('Hint 💡', 'You can check the property `type` to find out whether it is prime or not');
+      printMessage('Hint 💡', 'You can check the property `category` to find out whether it is a tech item or not');
       throw error;
     }
   });
