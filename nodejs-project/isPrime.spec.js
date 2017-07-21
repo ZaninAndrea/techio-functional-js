@@ -8,7 +8,7 @@ Array.prototype.filter = function () {
   filterUsed = true;
   return superFilter.apply(this, arguments);
 };
-
+describe('tests', function (){
 it('should return the prime items', function () {
   try {
     var cart=[
@@ -60,9 +60,10 @@ it('should use filter', function(){
   }
 })
 
-if (!failed){
+after(function (){
   printMessage('Good Job', 'Great another challenge completed! ');
-}
+})
+})
 
 function printMessage(channel, message) {
   console.log('\nTECHIO> message --channel "' + channel + '" "' + message + '"');
