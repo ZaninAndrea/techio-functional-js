@@ -2,10 +2,10 @@ title : Node.JS
 
 # Table of contents
 plan:
-  - title: Up and running with express for Node.js # Set the page title
-    statement: markdowns/welcome.md # Set the file path to the page content
-#  - title: Another Page
-#    statement: markdowns/another-page.md
+  - title: Pure Functions # Set the page title
+    statement: markdowns/pure.md # Set the file path to the page content
+  - title: Higher Order Functions
+    statement: markdowns/higher.md
 
 # Settings for your programming projects and the associated Docker images
 projects:

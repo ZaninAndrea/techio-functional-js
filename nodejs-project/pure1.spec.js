@@ -1,7 +1,7 @@
 ﻿﻿var assert = require('assert');
 var pure1 = require('./pure1.js');
 
-it('should sum stars', function () {
+it('should greet', function () {
   try {
     assert.equal("Hi, Alex", pure1.greet("Alex"));
     assert.equal("Hi, Tim", pure1.greet("Tim"));
