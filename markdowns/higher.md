@@ -22,7 +22,12 @@ Reject is not a built-in function in js, we are going to use the library `unders
 @[Implement the `notPrimeItems` function using `reject` (you can use functions defined in the other snippets)]({ "stubs": ["isNotPrime.js", "isPrime.js"], "command": "node_modules/mocha/bin/mocha isNotPrime.spec.js --reporter list" , "layout": "aside" })
 
 # Map
-Another very useful higher order function is `map`: it takes a function and applies it to all the elements of an array.
+Another very useful higher order function is `map`: it takes a function and applies it to all the elements of an array.  
+The syntax is identical to `filter`
 E.g.
 
 @[Squaring all the elements of an array]({ "stubs": ["square.js"], "command": "node square.js"})
+
+Now back to our amazon example: we can use `map` to apply a coupon. The `applyCoupon` function should apply a 20% discount on all the tech items.
+
+@[Implement the `applyCoupon` function]({ "stubs": ["coupon.js"], "command": "node_modules/mocha/bin/mocha coupon.spec.js --reporter list"})  
