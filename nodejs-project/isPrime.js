@@ -7,6 +7,9 @@ var cart=[
   {"name":"dress", "category":"regular"},
 ]
 */
+function isPrime(item){
+
+}
 
 function primeItems(cart){
   // write your code here
@@ -14,6 +17,7 @@ function primeItems(cart){
 
 // { autofold
 module.exports = {
-  primeItems: primeItems
+  primeItems: primeItems,
+  isPrime: isPrime
 };
 // }
