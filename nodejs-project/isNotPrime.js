@@ -4,6 +4,6 @@ function notPrimeItems(cart){
 
 // { autofold
 module.exports = {
-  primeItems: primeItems
+  notPrimeItems: notPrimeItems
 };
 // }
