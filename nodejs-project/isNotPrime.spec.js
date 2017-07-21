@@ -113,10 +113,6 @@ describe('tests', function() {
       throw error;
     }
   })
-
-  after(function() {
-    printMessage('Good Job', 'Great another challenge completed! ');
-  })
 })
 
 function printMessage(channel, message) {
