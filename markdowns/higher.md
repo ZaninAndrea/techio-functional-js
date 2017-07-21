@@ -10,9 +10,9 @@ Here is an example:
 
 As you can see the function `isEven` doesn't need to include the logic to handle arrays, and this is the great thing about these higher order function: now the decision logic is kept separate by the function applying it to the array, so we can reuse it.  
 
-Let's try to implement our first piece of logic for the amazon cart:  
+Let's try to implement our first piece of logic for the amazon cart: extracting from the `cart` array all the prime items
 
-@[Use the filter function to return all the prime items in the cart]({ "stubs": ["isPrime.js"], "command": "node_modules/mocha/bin/mocha isPrime.spec.js --reporter list",  "layout": "aside" })
+@[Implement `isPrime` and `primeItems`, for the latter use `filter`]({ "stubs": ["isPrime.js"], "command": "node_modules/mocha/bin/mocha isPrime.spec.js --reporter list",  "layout": "aside" })
 
 # Reject
 We can now reuse the `isPrime` function in conjunction with `reject` to get all the non-prime items in the cart. The reject function is the opposite of the filter: it creates an array with all the elements but those that satisfy the condition.  
