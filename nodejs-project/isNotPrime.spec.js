@@ -15,84 +15,84 @@ describe('tests', function() {
     try {
       var cart = [{
           "name": "Biscuits",
-          "category": "regular"
+          "type": "regular"
         },
         {
           "name": "Monitor",
-          "category": "prime"
+          "type": "prime"
         },
         {
           "name": "Mouse",
-          "category": "prime"
+          "type": "prime"
         },
         {
           "name": "dress",
-          "category": "regular"
+          "type": "regular"
         }
       ]
       var solution = [{
           "name": "Biscuits",
-          "category": "regular"
+          "type": "regular"
         },
         {
           "name": "dress",
-          "category": "regular"
+          "type": "regular"
         }
       ]
       var cart2 = [{
           "name": "E-Book",
-          "category": "prime"
+          "type": "prime"
         },
         {
           "name": "pen",
-          "category": "regular"
+          "type": "regular"
         },
         {
           "name": "Cheese",
-          "category": "regular"
+          "type": "regular"
         },
         {
           "name": "Bike",
-          "category": "prime"
+          "type": "prime"
         },
         {
           "name": "Biscuits",
-          "category": "regular"
+          "type": "regular"
         },
         {
           "name": "Monitor",
-          "category": "prime"
+          "type": "prime"
         }
       ]
       var solution2 = [{
           "name": "pen",
-          "category": "regular"
+          "type": "regular"
         },
         {
           "name": "Cheese",
-          "category": "regular"
+          "type": "regular"
         },
         {
           "name": "Biscuits",
-          "category": "regular"
+          "type": "regular"
         }
       ]
       var cart3 = [{
           "name": "Biscuits",
-          "category": "regular"
+          "type": "regular"
         },
         {
           "name": "dress",
-          "category": "regular"
+          "type": "regular"
         }
       ]
       var solution3 = [{
           "name": "Biscuits",
-          "category": "regular"
+          "type": "regular"
         },
         {
           "name": "dress",
-          "category": "regular"
+          "type": "regular"
         }
       ]
       assert.deepEqual(solution, isNotPrime.notPrimeItems(cart));
@@ -101,7 +101,7 @@ describe('tests', function() {
 
     } catch (error) {
       failed = true;
-      printMessage('Hint 💡', 'You can check the property category to find out whether it is prime or not');
+      printMessage('Hint 💡', 'You can check the property `type` to find out whether it is prime or not');
       throw error;
     }
   });
