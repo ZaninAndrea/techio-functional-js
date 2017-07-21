@@ -1,4 +1,5 @@
 var assert = require('assert');
+var isPrime = require('./isPrime.js'); // to allow reference to previously defined functions
 var isNotPrime = require('./isNotPrime.js');
 var _ = require('underscore') // needed to have support for the reject function
 
