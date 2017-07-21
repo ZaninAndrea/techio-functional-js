@@ -1,5 +1,6 @@
 var assert = require('assert');
 var isNotPrime = require('./isNotPrime.js');
+var _ = require('underscore') // needed to have support for the reject function
 
 var rejectUsed = false;
 var failed = false;
