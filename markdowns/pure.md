@@ -24,4 +24,4 @@ function adder (x){
 The great benefit of pure functions is that their output is **deterministic**: given some inputs it will always return the same value, this makes them extremely easy to debug. E.g. our `add2` function from before given the input `12` will always return `14`
 
 Now time for some code:
-@[Implement the pure function `greet` following the specification]({ "stubs": ["pure1.js"], "command": "node_modules/mocha/bin/mocha pure1.spec.js --reporter list" })
+@[Implement the pure function `greet` following the specification]({ "stubs": ["pure/pure1.js"], "command": "node_modules/mocha/bin/mocha pure/pure1.spec.js --reporter list" })
