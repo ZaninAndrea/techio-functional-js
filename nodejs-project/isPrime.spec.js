@@ -98,7 +98,7 @@ describe('tests', function() {
 
   it('should use filter', function() {
     try {
-      assert.equal(true, filterUsed);
+      assert(filterUsed);
     } catch (error) {
       failed = true;
       printMessage('Hint 💡', 'You should use the `filter` function!');

@@ -108,7 +108,7 @@ describe('tests', function() {
 
   it('should use reject', function() {
     try {
-      assert.equal(true, rejectUsed);
+      assert(rejectUsed);
     } catch (error) {
       failed = true;
       printMessage('Hint 💡', 'You should use the `reject` function!');
