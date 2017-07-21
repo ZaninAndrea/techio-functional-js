@@ -52,7 +52,7 @@ it('should return the prime items', function () {
 
 it('should use filter', function(){
   try {
-    assert.deepEqual(true, filterUsed);
+    assert.equal(true, filterUsed);
   } catch (error) {
     failed = true;
     printMessage('Hint 💡', 'You should use the `filter` function!');

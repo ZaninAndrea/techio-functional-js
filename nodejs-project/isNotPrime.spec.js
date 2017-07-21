@@ -55,7 +55,7 @@ it('should return the regular items', function () {
 
 it('should use reject', function(){
   try {
-    assert.deepEqual(true, rejectUsed);
+    assert.equal(true, rejectUsed);
   } catch (error) {
     failed = true;
     printMessage('Hint 💡', 'You should use the `reject` function!');
