@@ -2,6 +2,7 @@ var assert = require('assert');
 var isPrime = require('./isPrime.js');
 
 var filterUsed = false;
+var failed = false;
 var superFilter = Array.prototype.filter;
 Array.prototype.filter = function () {
   filterUsed = true;
@@ -43,6 +44,7 @@ it('should return the prime items', function () {
     assert.equal(solution3, isPrime.primeItems(cart3));
 
   } catch (error) {
+    failed = true;
     printMessage('Hint 💡', 'You can check the property category to find out whether it is prime or not');
     throw error;
   }
@@ -52,13 +54,13 @@ it('should use filter', function(){
   try {
     assert.equal(true, filterUsed);
   } catch (error) {
+    failed = true;
     printMessage('Hint 💡', 'You should use the `filter` function!');
     throw error;
   }
 })
 
 
-printMessage('Good Job', 'Great another challenge completed! ');
 
 function printMessage(channel, message) {
   console.log('\nTECHIO> message --channel "' + channel + '" "' + message + '"');

@@ -2,6 +2,7 @@ var assert = require('assert');
 var isPrime = require('./isPrime.js');
 
 var rejectUsed = false;
+var failed = false;
 var superReject = Array.prototype.reject;
 Array.prototype.reject = function () {
   superReject = true;
@@ -46,6 +47,7 @@ it('should return the regular items', function () {
     assert.equal(solution3, isPrime.notPrimeItems(cart3));
 
   } catch (error) {
+    failed = true;
     printMessage('Hint 💡', 'You can check the property category to find out whether it is prime or not');
     throw error;
   }
@@ -55,13 +57,15 @@ it('should use reject', function(){
   try {
     assert.equal(true, rejectUsed);
   } catch (error) {
+    failed = true;
     printMessage('Hint 💡', 'You should use the `reject` function!');
     throw error;
   }
 })
 
-
-printMessage('Good Job', 'Great another challenge completed! ');
+if (!failed){
+  printMessage('Good Job', 'Great another challenge completed! ');
+}
 
 function printMessage(channel, message) {
   console.log('\nTECHIO> message --channel "' + channel + '" "' + message + '"');
