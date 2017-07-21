@@ -42,9 +42,9 @@ it('should return the regular items', function () {
       {"name":"Biscuits", "category":"regular"},
       {"name":"dress", "category":"regular"}
     ]
-    assert.equal(solution, isPrime.notPrimeItems(cart));
-    assert.equal(solution2, isPrime.notPrimeItems(cart2));
-    assert.equal(solution3, isPrime.notPrimeItems(cart3));
+    assert.deepEqual(solution, isPrime.notPrimeItems(cart));
+    assert.deepEqual(solution2, isPrime.notPrimeItems(cart2));
+    assert.deepEqual(solution3, isPrime.notPrimeItems(cart3));
 
   } catch (error) {
     failed = true;
@@ -55,7 +55,7 @@ it('should return the regular items', function () {
 
 it('should use reject', function(){
   try {
-    assert.equal(true, rejectUsed);
+    assert.deepEqual(true, rejectUsed);
   } catch (error) {
     failed = true;
     printMessage('Hint 💡', 'You should use the `reject` function!');

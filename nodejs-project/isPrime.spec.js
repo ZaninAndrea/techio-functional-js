@@ -39,9 +39,9 @@ it('should return the prime items', function () {
       {"name":"dress", "category":"regular"}
     ]
     var solution3 = []
-    assert.equal(solution, isPrime.primeItems(cart));
-    assert.equal(solution2, isPrime.primeItems(cart2));
-    assert.equal(solution3, isPrime.primeItems(cart3));
+    assert.deepEqual(solution, isPrime.primeItems(cart));
+    assert.deepEqual(solution2, isPrime.primeItems(cart2));
+    assert.deepEqual(solution3, isPrime.primeItems(cart3));
 
   } catch (error) {
     failed = true;
@@ -52,7 +52,7 @@ it('should return the prime items', function () {
 
 it('should use filter', function(){
   try {
-    assert.equal(true, filterUsed);
+    assert.deepEqual(true, filterUsed);
   } catch (error) {
     failed = true;
     printMessage('Hint 💡', 'You should use the `filter` function!');
