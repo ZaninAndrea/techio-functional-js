@@ -1,3 +1,5 @@
+require('underscore') // needed to have support for the reject function
+
 /*
 The cart is an array of objects like this:
 var cart=[

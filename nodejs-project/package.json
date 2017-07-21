@@ -1,10 +1,11 @@
 {
-  "name": "nodejs-project-template",
+  "name": "nodejs-functional-programming",
   "version": "1.0.0",
-  "description": "",
-  "author": "FERNANDEZ Quentin",
+  "description": "Functional programming introduction",
+  "author": "Zanin Andrea",
   "license": "ISC",
   "dependencies": {
-    "mocha": "^3.4.2"
+    "mocha": "^3.4.2",
+    "underscore": "^1.8.3"
   }
 }
