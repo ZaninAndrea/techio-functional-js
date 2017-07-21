@@ -48,7 +48,7 @@ it('should return the prime items', function () {
   }
 });
 
-it('should use filter'){
+it('should use filter', function(){
   try {
     assert.equal(true, filterUsed);
   } catch (error) {
@@ -62,4 +62,4 @@ printMessage('Good Job', 'Great another challenge completed! ');
 
 function printMessage(channel, message) {
   console.log('\nTECHIO> message --channel "' + channel + '" "' + message + '"');
-}
+})
