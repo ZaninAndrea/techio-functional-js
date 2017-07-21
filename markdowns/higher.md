@@ -20,3 +20,9 @@ We can now reuse the `isPrime` function in conjunction with `reject` to get all 
 Reject is not a built-in function in js, we are going to use the library `underscore.js` to have it. The syntax is slightly different: `_.reject(list, predicate)` where `_` is the underscore library
 
 @[Implement the `notPrimeItems` function using `reject` (you can use functions defined in the other snippets)]({ "stubs": ["isNotPrime.js", "isPrime.js"], "command": "node_modules/mocha/bin/mocha isNotPrime.spec.js --reporter list" , "layout": "aside" })
+
+# Map
+Another very useful higher order function is `map`: it takes a function and applies it to all the elements of an array.
+E.g.
+
+@[Squaring all the elements of an array]({ "stubs": ["square.js"], "command": "node square.js"})

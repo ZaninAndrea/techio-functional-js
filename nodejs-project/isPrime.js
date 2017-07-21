@@ -1,10 +1,10 @@
 /*
 The cart is an array of objects like this:
 var cart=[
-  {"name":"Biscuits", "type":"regular"},
-  {"name":"Monitor", "type":"prime"},
-  {"name":"Mouse", "type":"prime"},
-  {"name":"dress", "type":"regular"},
+  {"name":"Biscuits", "type":"regular", category:"food"},
+  {"name":"Monitor", "type":"prime", category:"tech"},
+  {"name":"Mouse", "type":"prime", category:"tech"},
+  {"name":"dress", "type":"regular", category:"clothes"},
 ]
 */
 function isPrime(item){
