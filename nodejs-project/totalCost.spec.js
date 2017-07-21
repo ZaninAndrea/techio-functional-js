@@ -35,7 +35,7 @@ describe('tests', function() {
           "price": 49.90
         }
       ]
-      var solution = 0
+      var solution = cart.reduce((acc,x)=> acc+x.price, 0)
       var error = Math.abs(solution - totalCost.totalCost(cart))
       assert(error < 0.01);
 
