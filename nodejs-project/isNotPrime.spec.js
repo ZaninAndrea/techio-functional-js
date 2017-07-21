@@ -58,7 +58,7 @@ it('should use reject', function(){
     printMessage('Hint 💡', 'You should use the `reject` function!');
     throw error;
   }
-}
+})
 
 
 printMessage('Good Job', 'Great another challenge completed! ');
