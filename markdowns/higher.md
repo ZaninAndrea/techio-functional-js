@@ -48,3 +48,7 @@ Some examples:
 
 @[Multiplying all the elements of an array]({ "stubs": ["multiply.js"], "command": "node multiply.js"})
 @[Implementing map with reduce]({ "stubs": ["implementMap.js"], "command": "node implementMap.js"})
+
+Now to complete our amazon workflow write a function that returns the cost of the order.
+
+@[Implement the `totalCost` function using `reduce`]({ "stubs": ["totalCost.js"], "command": "node_modules/mocha/bin/mocha totalCost.spec.js --reporter list" , "layout": "aside" })
