@@ -8,6 +8,8 @@ plan:
     statement: markdowns/higher.md
   - title: Currying
     statement: markdowns/currying.md
+  - title: Recursion
+    statement: markdowns/recursion.md
 
 # Settings for your programming projects and the associated Docker images
 projects:
