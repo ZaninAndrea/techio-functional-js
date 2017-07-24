@@ -8,7 +8,7 @@ Array.prototype.filter = function() {
   filterUsed = true;
   return superFilter.apply(this, arguments);
 };
-describe('tests', function() {
+describe('tests: ', function() {
   it('should return the prime items', function() {
     try {
       var cart = [{

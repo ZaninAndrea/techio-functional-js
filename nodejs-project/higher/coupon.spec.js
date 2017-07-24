@@ -7,7 +7,7 @@ Array.prototype.map = function() {
   mapUsed = true;
   return superMap.apply(this, arguments);
 };
-describe('tests', function() {
+describe('tests: ', function() {
   it('should return the discounted items', function() {
     try {
       var cart = [{

@@ -7,7 +7,7 @@ Array.prototype.reduce = function() {
   reduceUsed = true;
   return superreduce.apply(this, arguments);
 };
-describe('tests', function() {
+describe('tests: ', function() {
   it('should return the prime items', function() {
     try {
       var cart = [{

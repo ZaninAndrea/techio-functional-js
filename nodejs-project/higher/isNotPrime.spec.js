@@ -10,7 +10,7 @@ _.reject = function() {
   rejectUsed = true;
   return superReject.apply(this, arguments);
 };
-describe('tests', function() {
+describe('tests: ', function() {
   it('should return the regular items', function() {
     try {
       var cart = [{
