@@ -1,7 +1,7 @@
 var assert = require('assert');
 var applyCoupon2 = require('./applyCoupon2.js');
 
-describe('tests: ', function() {
+describe('applyCoupon', function() {
   it ('should be curriable', function (){
     try{
       applyCoupon2.applyCoupon("tech")(0.8)({
