@@ -1,5 +1,5 @@
 let countdown = (num) => {
-    if (num == 0) { // base case
+    if (num === 0) { // base case
         console.log("BOOM");
     }
     else {

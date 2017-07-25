@@ -36,7 +36,7 @@ const tree = {
             subFolders: []
         }]
     }]
-}
+};
 
 find = element =>
             tree =>
@@ -52,7 +52,7 @@ find = element =>
                     }else{
                         return false; // returns false if it's not in this folder and there are no subfolders
                     }
-                }
+                };
 
 console.log("paper.pdf > "+find("paper.pdf")(tree));
 console.log("randomfile > "+find("randomfile")(tree));

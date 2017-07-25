@@ -1,0 +1,142 @@
+var assert = require('assert');
+var buildTree = require('./buildTree.js');
+
+it('should return an object', function() {
+    try {
+        const tree1 = []
+        const solution1 = correctBuildTree(tree1)
+
+        assert(typeof({}) === typeof(buildTree.buildTree(tree1)));
+
+    } catch (error) {
+        printMessage('Hint 💡', 'You should return an object');
+        throw error;
+    }
+});
+
+it('should return the correct tree', function() {
+    try {
+        const correctBuildTree = (list, parent) => {
+            var node = {}
+            list
+                .filter(x => x.parent === parent)
+                .forEach(x => {
+                    node[x.id] = buildTree(list, x.id)
+                })
+            return node
+        }
+        const tree1 = [{
+                "id": "Grandad",
+                "parent": null
+            },
+            {
+                "id": "Dad",
+                "parent": "Grandad"
+            },
+            {
+                "id": "You",
+                "parent": "Dad"
+            },
+            {
+                "id": "Son",
+                "parent": "You"
+            },
+            {
+                "id": "Daughter",
+                "parent": "You"
+            },
+            {
+                "id": "Brother",
+                "parent": "Dad"
+            },
+            {
+                "id": "Nephew",
+                "parent": "Brother"
+            },
+            {
+                "id": "Niece",
+                "parent": "Brother"
+            },
+            {
+                "id": "Sister",
+                "parent": "Dad"
+            },
+            {
+                "id": "Uncle",
+                "parent": "Grandad"
+            },
+            {
+                "id": "Cousin",
+                "parent": "Uncle"
+            }
+        ]
+        const solution1 = correctBuildTree(tree1)
+
+        const tree2 = [{
+                "id": "Grandad",
+                "parent": null
+            },
+            {
+                "id": "Dad",
+                "parent": "Grandad"
+            },
+            {
+                "id": "You",
+                "parent": "John"
+            },
+            {
+                "id": "John",
+                "parent": "You"
+            },
+            {
+                "id": "Daughter",
+                "parent": "You"
+            }
+        ]
+        const solution2 = correctBuildTree(tree2)
+
+        const tree3 = [{
+                "id": "Grandad",
+                "parent": null
+            },
+            {
+                "id": "a",
+                "parent": "Grandad"
+            },
+            {
+                "id": "b",
+                "parent": "a"
+            },
+            {
+                "id": "c",
+                "parent": "b"
+            },
+            {
+                "id": "d",
+                "parent": "c"
+            },
+            {
+                "id": "e",
+                "parent": "d"
+            },
+            {
+                "id": "f",
+                "parent": "e"
+            },
+        ]
+        const solution3 = correctBuildTree(tree3)
+
+        assert.deepEqual(solution1, buildTree.buildTree(tree1));
+        assert.deepEqual(solution2, buildTree.buildTree(tree2));
+        assert.deepEqual(solution3, buildTree.buildTree(tree3));
+
+    } catch (error) {
+        printMessage('Hint 💡', 'Try thinking about how to reduce the problem at each call and what base case to use');
+        throw error;
+    }
+});
+
+
+function printMessage(channel, message) {
+    console.log('\nTECHIO> message --channel "' + channel + '" "' + message + '"');
+}

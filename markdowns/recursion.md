@@ -50,5 +50,6 @@ should become this
 }
 ```
 
-> Hint: you can use filter to extract all the childs of one node from the list
+> Hint: the subtrees are smaller version of the treeBuilding problem, can you figure out what the base case is?
+
 @[Finding a file]({ "stubs": ["recursion/buildTree.js"], "command": "node recursion/buildTree.js" })
