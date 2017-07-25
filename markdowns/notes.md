@@ -15,6 +15,7 @@ You break problems down to tiny bits and then glue them together with cool funct
   - example adding infos gradually like (cart, address, paying method)
 - recursion
   - building a tree from array of {id,parent} objects
+  - quicksort
 - functors (objects that have a function that unwraps internal values in a value and applies a function on each of them, e.g. arrays) (a functor is a container that can be passed a function and apply it nondestructively to all of its elements returning another functor of the same size) (types that implements map)
   - we can chaing map calls, because ti returns another functor
   - arrays, streams, trees are functors
