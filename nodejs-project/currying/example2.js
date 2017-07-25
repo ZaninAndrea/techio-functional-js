@@ -1,9 +1,9 @@
-var checkProperty = propertyName =>
+const checkProperty = propertyName =>
                       expectedValue =>
                         object =>
                           object[propertyName] === expectedValue
 
-var candies = [
+const candies = [
   {"soft":true, "flavour":"strawberry"},
   {"soft":false, "flavour":"strawberry"},
   {"soft":false, "flavour":"cherry"},
@@ -11,8 +11,8 @@ var candies = [
   {"soft":false, "flavour":"lemon"},
 ]
 
-var softCandies = candies.filter( checkProperty("soft")(true) ) // checkProperty("soft")(true) returns a function that accepts an object, exactly what we need
+const softCandies = candies.filter( checkProperty("soft")(true) ) // checkProperty("soft")(true) returns a function that accepts an object, exactly what we need
 console.log(softCandies);
 
-var strawberryCandies = candies.filter( checkProperty("flavour")("strawberry") )
+const strawberryCandies = candies.filter( checkProperty("flavour")("strawberry") )
 console.log(strawberryCandies);

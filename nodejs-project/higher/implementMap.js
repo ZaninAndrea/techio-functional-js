@@ -6,5 +6,5 @@ function map(arr, callback){
 }
 
 // squaring example
-var squares = map([1,2,3,4,5], (x) => Math.pow(x,2) )
+const squares = map([1,2,3,4,5], (x) => Math.pow(x,2) )
 console.log(squares)
