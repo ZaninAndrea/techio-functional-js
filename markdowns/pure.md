@@ -7,6 +7,8 @@ As a reference, here's the topics we'll talk about:
 
 You need to know basic JavaScript usage, if you never programmed in JavaScript you can checkout [this quick intro](https://learnxinyminutes.com/docs/javascript/) and come back, I'll wait for you.
 
+Open Source is <3, so here is the [repository]() for this playground, feel free to contribute
+
 # Pure Functions  
 I admit it, I lied to you: we need a tiny bit of theory to get started.  
 One key concept of functional programming is that functions should not have side-effects and should not depend on external state, i.e. a function should take some input and return some output without modifying or accessing any value outside the function.
