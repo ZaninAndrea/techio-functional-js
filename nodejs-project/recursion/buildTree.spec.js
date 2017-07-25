@@ -21,6 +21,7 @@ it('should return the correct tree', function() {
                 })
             return node
         }
+        
         const tree1 = [{
                 "id": "Grandad",
                 "parent": null
