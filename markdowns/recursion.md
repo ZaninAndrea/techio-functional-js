@@ -52,4 +52,4 @@ should become this
 
 > Hint: the subtrees are smaller version of the treeBuilding problem, can you figure out what the base case is?
 
-@[Finding a file]({ "stubs": ["recursion/buildTree.js"], "command": "node recursion/buildTree.js" })
+@[Finding a file]({ "stubs": ["recursion/buildTree.js"], "command": "node_modules/mocha/bin/mocha recursion/buildTree.spec.js --reporter list" })
