@@ -17,7 +17,7 @@ it('should return the correct tree', function() {
             list
                 .filter(x => x.parent === parent)
                 .forEach(x => {
-                    node[x.id] = buildTree(list, x.id)
+                    node[x.id] = correctBuildTree(list, x.id)
                 })
             return node
         }
