@@ -1,5 +1,5 @@
-var assert = require('assert');
-var applyCoupon2 = require('./applyCoupon2.js');
+const assert = require('assert');
+const applyCoupon2 = require('./applyCoupon2.js');
 
 describe('applyCoupon', function() {
   it ('should be curriable', function (){
@@ -18,26 +18,26 @@ describe('applyCoupon', function() {
 
   it('should return the discounted item', function() {
     try {
-      var test = {
+      const test = {
           "name": "Biscuits",
           "type": "regular",
           "category": "food",
           "price": 2.0
         }
-      var test2 = {
+      const test2 = {
           "name": "Biscuits",
           "type": "regular",
           "category": "food",
           "price": 2.0
         }
-      var test3 = {
+      const test3 = {
           "name": "Biscuits",
           "type": "regular",
           "category": "food",
           "price": 2.0
         }
 
-      var solution1 = {
+      const solution1 = {
           "name": "Biscuits",
           "type": "regular",
           "category": "food",
@@ -45,7 +45,7 @@ describe('applyCoupon', function() {
         }
       assert.deepEqual(applyCoupon2.applyCoupon("tech")(0.8)(test), solution1)
 
-      var solution2 = {
+      const solution2 = {
           "name": "Biscuits",
           "type": "regular",
           "category": "food",
@@ -53,7 +53,7 @@ describe('applyCoupon', function() {
         }
       assert(Math.abs(applyCoupon2.applyCoupon("food")(0.5)(test2).price - solution2.price)<0.01)
 
-      var solution3 = {
+      const solution3 = {
           "name": "Biscuits",
           "type": "regular",
           "category": "food",

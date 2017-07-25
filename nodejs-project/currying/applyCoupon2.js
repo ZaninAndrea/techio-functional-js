@@ -1,4 +1,4 @@
-var applyCoupon = // this should be a curried function
+const applyCoupon = // this should be a curried function
 
 // { autofold
 module.exports = {
