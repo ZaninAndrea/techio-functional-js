@@ -3,11 +3,7 @@ var buildTree = require('./buildTree.js');
 
 it('should return an object', function() {
     try {
-        const tree1 = []
-        const solution1 = correctBuildTree(tree1)
-
-        assert(typeof({}) === typeof(buildTree.buildTree(tree1)));
-
+        assert(typeof({}) === typeof(buildTree.buildTree([],null)));
     } catch (error) {
         printMessage('Hint 💡', 'You should return an object');
         throw error;
