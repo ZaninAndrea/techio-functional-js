@@ -67,7 +67,7 @@ it('should return the correct tree', function() {
                 "parent": "Uncle"
             }
         ]
-        const solution1 = correctBuildTree(tree1)
+        const solution1 = correctBuildTree(tree1,null)
 
         const tree2 = [{
                 "id": "Grandad",
@@ -90,7 +90,7 @@ it('should return the correct tree', function() {
                 "parent": "You"
             }
         ]
-        const solution2 = correctBuildTree(tree2)
+        const solution2 = correctBuildTree(tree2,null)
 
         const tree3 = [{
                 "id": "Grandad",
@@ -121,12 +121,12 @@ it('should return the correct tree', function() {
                 "parent": "e"
             },
         ]
-        const solution3 = correctBuildTree(tree3)
+        const solution3 = correctBuildTree(tree3,null)
         console.log(solution1);
         console.log(buildTree.buildTree(tree1));
-        assert.deepEqual(solution1, buildTree.buildTree(tree1));
-        assert.deepEqual(solution2, buildTree.buildTree(tree2));
-        assert.deepEqual(solution3, buildTree.buildTree(tree3));
+        assert.deepEqual(solution1, buildTree.buildTree(tree1,null));
+        assert.deepEqual(solution2, buildTree.buildTree(tree2,null));
+        assert.deepEqual(solution3, buildTree.buildTree(tree3,null));
     } catch (error) {
         printMessage('Hint 💡', 'Try thinking about how to reduce the problem at each call and what base case to use');
         throw error;
