@@ -126,7 +126,6 @@ it('should return the correct tree', function() {
         assert.deepEqual(solution1, buildTree.buildTree(tree1));
         assert.deepEqual(solution2, buildTree.buildTree(tree2));
         assert.deepEqual(solution3, buildTree.buildTree(tree3));
-        assert(5==3)
     } catch (error) {
         printMessage('Hint 💡', 'Try thinking about how to reduce the problem at each call and what base case to use');
         throw error;
