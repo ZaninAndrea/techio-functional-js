@@ -20,19 +20,19 @@ OUR FILESYSTEM IS THIS
 */
 
 const tree = {
-    name : "home"
-    files : ["notes.txt","todo.txt"]
+    name : "home",
+    files : ["notes.txt","todo.txt"],
     subFolders: [{
-        name : "andrea"
-        files : ["paper.pdf","funds.csv"]
+        name : "andrea",
+        files : ["paper.pdf","funds.csv"],
         subFolders: []
     },
     {
-        name: "john"
-        files : ["summer1.jpg","summer2.jpg", "summer3.jpg"]
+        name: "john",
+        files : ["summer1.jpg","summer2.jpg", "summer3.jpg"],
         subFolders: [{
-            name : "logs"
-            files : ["logs1","logs2","logs3","logs4"]
+            name : "logs",
+            files : ["logs1","logs2","logs3","logs4"],
             subFolders: []
         }]
     }]
