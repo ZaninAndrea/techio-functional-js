@@ -8,3 +8,5 @@ Just to understand the concept let's implement a countdown as a recursive functi
 Recursion is much more powerful than loops, for example they are very useful to implement any algorithm of the "divide and conquer" family; we'll implement a simple algorithm that tells us whether a file is in a directory or in it's sub-directories.
 
 @[Finding a file]({ "stubs": ["recursion/tree.js"], "command": "node recursion/tree.js" })
+
+In this tiny example we used recursion, currying, higher order function and lambda expressions, which is nice per se, but most importantly we solved a problem that is unsolvable using only loops.

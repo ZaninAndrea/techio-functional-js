@@ -42,17 +42,17 @@ find = element =>
             tree =>
                 {
                     if (tree.files.indexOf(element)!==-1){ // which is if the element is in this folder
-                        return true
+                        return true;
                     }
                     else if (tree.subFolders.length !== 0){ // which is if the are subfolders
-                        const otherFolders = tree.subFolders.map(find(element)) // searches the element in every subfolder
-                        const aOrB = (a,b)=>a || b // a function applying the or operator
-                        const found = otherFolders.reduce(aOrB, false) // returns true if element was in at least one of the subfolders
-                        return found
+                        const otherFolders = tree.subFolders.map(find(element)); // searches the element in every subfolder
+                        const aOrB = (a,b)=>a || b; // a function applying the or operator
+                        const found = otherFolders.reduce(aOrB, false); // returns true if element was in at least one of the subfolders
+                        return found;
                     }else{
-                        return false // returns false if it's not in this folder and there are no subfolders
+                        return false; // returns false if it's not in this folder and there are no subfolders
                     }
                 }
 
-console.log("paper.pdf > "+find("paper.pdf")(tree))
-console.log("randomfile > "+find("randomfile")(tree))
+console.log("paper.pdf > "+find("paper.pdf")(tree));
+console.log("randomfile > "+find("randomfile")(tree));
