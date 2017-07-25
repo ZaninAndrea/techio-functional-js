@@ -1,5 +1,5 @@
-var assert = require('assert');
-var buildTree = require('./buildTree.js');
+const assert = require('assert');
+const buildTree = require('./buildTree.js');
 
 it('should return an object', function() {
     try {
@@ -21,7 +21,7 @@ it('should return the correct tree', function() {
                 })
             return node
         }
-        
+
         const tree1 = [{
                 "id": "Grandad",
                 "parent": null
@@ -126,7 +126,7 @@ it('should return the correct tree', function() {
         assert.deepEqual(solution1, buildTree.buildTree(tree1));
         assert.deepEqual(solution2, buildTree.buildTree(tree2));
         assert.deepEqual(solution3, buildTree.buildTree(tree3));
-
+        assert(5==3)
     } catch (error) {
         printMessage('Hint 💡', 'Try thinking about how to reduce the problem at each call and what base case to use');
         throw error;
