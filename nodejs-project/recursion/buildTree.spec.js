@@ -122,7 +122,8 @@ it('should return the correct tree', function() {
             },
         ]
         const solution3 = correctBuildTree(tree3)
-
+        console.log(solution1);
+        console.log(buildTree.buildTree(tree1));
         assert.deepEqual(solution1, buildTree.buildTree(tree1));
         assert.deepEqual(solution2, buildTree.buildTree(tree2));
         assert.deepEqual(solution3, buildTree.buildTree(tree3));
