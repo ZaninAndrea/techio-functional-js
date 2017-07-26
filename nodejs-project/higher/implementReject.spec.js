@@ -11,13 +11,12 @@ Array.prototype.filter = function() {
 describe('tests: ', function() {
     it('should return the correct array', function() {
         try {
-            const correctReject = (arr, callback) => arr.filter(x => !callback(x))
             const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9]
             const isEven = x => x%2===0
             const isOdd = x => x%2===1
 
-            assert.deepEqual(correctReject(arr, isEven), implementReject.reject(arr, isEven));
-            assert.deepEqual(correctReject(arr, isOdd), implementReject.reject(arr, isOdd));
+            assert.deepEqual([ 1, 3, 5, 7, 9 ], implementReject.reject(arr, isEven));
+            assert.deepEqual([ 2, 4, 6, 8 ], implementReject.reject(arr, isOdd));
 
         } catch (error) {
             if (!filterUsed) {
