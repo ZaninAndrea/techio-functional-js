@@ -6,7 +6,7 @@ You break problems down to tiny bits and then glue them together with cool funct
 - Pure functions
 - higher order functions
   - [x] filter and reject: prime and non-prime items (reusability of the same classification function)
-    - [ ] implement reject as an exercise for the reader
+    - [x] implement reject as an exercise for the reader
   - [x] map: apply coupon
   - [x] reduce: total price
 - currying
