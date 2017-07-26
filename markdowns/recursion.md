@@ -1,5 +1,5 @@
 # Recursion
-A recursive function is a function that **calls itself** until it hits a **base case**, this is often used in recursive languages as a replacement for loops, as it is far more flexible. They key here is that each time the function calls itself the problem is reduced.
+A recursive function is a function that **calls itself** until it hits a **base case**, this is often used in recursive languages as a replacement for loops, because it is **far more flexible**. They key here is that each time the function calls itself the problem is reduced.
 
 Just to understand the concept let's implement a countdown as a recursive function:
 
