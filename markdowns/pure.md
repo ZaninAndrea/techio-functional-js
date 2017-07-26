@@ -1,7 +1,7 @@
 **Functional programming** is one of those things that you probably heard about, but never approached, because it looked too hard, too theoretical; well wait no more, because in this course you will be introduced to functional programming through examples and exercises in a familiar language: JavaScript.  
 As a reference, here's the topics we'll talk about:  
-- [Pure functions](#pure)
-- [Higher Order Functions](higher.md)
+- Pure functions
+- Higher Order Functions
 - Currying
 - Recursion
 
@@ -9,7 +9,7 @@ You need to know basic JavaScript usage, if you never programmed in JavaScript y
 
 Open Source is <3, so here is the [repository](https://github.com/ZaninAndrea/techio-functional-js) for this playground, feel free to contribute
 
-# <a name="Pure"></a> Pure Functions  
+# Pure Functions  
 I admit it, I lied to you: we need a tiny bit of theory to get started.  
 One key concept of functional programming is that functions should not have side-effects and should not depend on external state, i.e. a function should take some input and return some output without modifying or accessing any value outside the function.
 

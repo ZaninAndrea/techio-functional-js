@@ -21,6 +21,10 @@ Reject is not a built-in function in js, we are going to use the library `unders
 
 @[Implement the `notPrimeItems` function using `reject` (you can use functions defined in the other snippets)]({ "stubs": ["higher/isNotPrime.js", "higher/isPrime.js"], "command": "node_modules/mocha/bin/mocha higher/isNotPrime.spec.js --reporter list" , "layout": "aside" })
 
+As an optional exercise you could also implement reject yourself using filter.
+
+@[Implement the `reject` function using `reject`]({ "stubs": ["higher/implementReject.js"], "command": "node_modules/mocha/bin/mocha higher/implementReject.spec.js --reporter list"})
+
 # Lambda functions
 When defining short functions it's often convenient to use an alternative syntax called lambda function, that allows us to define anonymous functions in a more compact way: `( /*arguments*/ ) => { /*code*/ }` and if our function is only a return statement we can strip the curly brackets and avoid writing `return`: `( /*arguments*/ ) => /*value to return*/`.
 
