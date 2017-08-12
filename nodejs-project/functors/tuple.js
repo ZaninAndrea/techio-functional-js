@@ -1,4 +1,4 @@
-const newTuple =(a,b) => {
+const newTuple = (a,b) => {
     let tuple = {a: a, b: b}
     tuple.map = callback => newTuple(callback(tuple.a),callback(tuple.b))
     return tuple
